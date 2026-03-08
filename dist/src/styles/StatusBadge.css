@@ -1,0 +1,69 @@
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.failed {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+.status-badge.success {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+.status-badge.running {
+  background-color: #e8f0fe;
+  color: #1967d2;
+}
+
+.status-badge.delayed {
+  background-color: #fef7e0;
+  color: #ea8600;
+}
+
+.status-badge.critical {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+.status-badge.high {
+  background-color: #fef7e0;
+  color: #ea8600;
+}
+
+.status-badge.medium {
+  background-color: #fff4e5;
+  color: #e37400;
+}
+
+.status-badge.low {
+  background-color: #e8f0fe;
+  color: #1967d2;
+}
+
+.status-badge.db {
+  background-color: #f3e8fd;
+  color: #7627bb;
+}
+
+.status-badge.infra {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+.status-badge.application {
+  background-color: #fef7e0;
+  color: #ea8600;
+}
+
+.status-badge.file {
+  background-color: #e8f0fe;
+  color: #1967d2;
+}

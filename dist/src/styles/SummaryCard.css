@@ -1,0 +1,75 @@
+.summary-card {
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+
+.summary-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.summary-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.summary-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-card-icon {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.summary-card-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.summary-card-trend {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.summary-card-trend.up {
+  color: var(--danger-color);
+}
+
+.summary-card-trend.down {
+  color: var(--success-color);
+}
+
+.trend-indicator {
+  font-size: 16px;
+}
+
+.summary-card.total-jobs {
+  border-left: 4px solid var(--info-color);
+}
+
+.summary-card.failed-jobs {
+  border-left: 4px solid var(--danger-color);
+}
+
+.summary-card.sla-breach {
+  border-left: 4px solid var(--warning-color);
+}
+
+.summary-card.mttr {
+  border-left: 4px solid var(--success-color);
+}

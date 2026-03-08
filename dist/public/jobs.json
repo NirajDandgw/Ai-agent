@@ -1,0 +1,155 @@
+{
+  "jobs": [
+    {
+      "jobId": "NIGHT_BILLING",
+      "jobName": "JFFXDE77UG",
+      "jobType": "FILE_HANDLING",
+      "schedule": "Daily 01:00",
+      "expectedDurationMinutes": 45,
+      "logFilePath": "./logs/night_billing.log",
+      "schedulerTable": "SCHEDULER.BATCH_JOBS",
+      "execution": {
+        "runDate": "2026-01-23",
+        "startTime": "01:00",
+        "endTime": "01:20",
+        "status": "FAILED",
+        "exitCode": 12,
+        "uptime": "20m",
+        "downtime": "25m",
+        "failedCount": 5
+      },
+      "criticalJob": true,
+      "maxRetries": 3,
+      "severity": "CRITICAL"
+    },
+    {
+      "jobId": "PAYROLL_JOB",
+      "jobName": "PRX9921",
+      "jobType": "DATABASE",
+      "schedule": "Daily 02:00",
+      "expectedDurationMinutes": 30,
+      "logFilePath": "./logs/payroll.log",
+      "schedulerTable": "SCHEDULER.BATCH_JOBS",
+      "execution": {
+        "runDate": "2026-01-23",
+        "startTime": "02:00",
+        "endTime": "02:05",
+        "status": "FAILED",
+        "exitCode": 101,
+        "failedCount": 3
+      },
+      "criticalJob": true,
+      "maxRetries": 2,
+      "severity": "HIGH"
+    },
+    {
+      "jobId": "CUSTOMER_REPORT",
+      "jobName": "CRX8843",
+      "jobType": "REPORT_GENERATION",
+      "schedule": "Daily 04:00",
+      "expectedDurationMinutes": 25,
+      "logFilePath": "./logs/customer_report.log",
+      "schedulerTable": "SCHEDULER.BATCH_JOBS",
+      "execution": {
+        "runDate": "2026-01-23",
+        "startTime": "04:00",
+        "endTime": "04:18",
+        "status": "SUCCESS",
+        "exitCode": 0,
+        "uptime": "18m",
+        "downtime": "0m",
+        "failedCount": 0
+      },
+      "criticalJob": false,
+      "maxRetries": 1,
+      "severity": "LOW"
+    },
+    {
+      "jobId": "ETL_SALES_DAILY",
+      "jobName": "ETL_SALES_001",
+      "jobType": "ETL",
+      "schedule": "Daily 02:15",
+      "expectedDurationMinutes": 60,
+      "logFilePath": "./logs/etl_sales.log",
+      "schedulerTable": "SCHEDULER.BATCH_JOBS",
+      "execution": {
+        "runDate": "2026-01-23",
+        "startTime": "02:15",
+        "endTime": "04:30",
+        "status": "FAILED",
+        "exitCode": 8,
+        "uptime": "1h 45m",
+        "downtime": "2h 15m",
+        "failedCount": 7
+      },
+      "criticalJob": true,
+      "maxRetries": 3,
+      "severity": "HIGH"
+    },
+    {
+      "jobId": "INVENTORY_SYNC",
+      "jobName": "INV_SYNC_002",
+      "jobType": "FILE_HANDLING",
+      "schedule": "Every 4 hours",
+      "expectedDurationMinutes": 30,
+      "logFilePath": "./logs/inventory_sync.log",
+      "schedulerTable": "SCHEDULER.BATCH_JOBS",
+      "execution": {
+        "runDate": "2026-01-23",
+        "startTime": "03:45",
+        "endTime": "04:30",
+        "status": "FAILED",
+        "exitCode": 4,
+        "uptime": "3h 15m",
+        "downtime": "45m",
+        "failedCount": 2
+      },
+      "criticalJob": false,
+      "maxRetries": 2,
+      "severity": "MEDIUM"
+    },{
+  "jobId": "PAYMENT_RECON_JOB",
+  "jobName": "PAY_RECON_003",
+  "jobType": "DATABASE",
+  "schedule": "Daily 03:00",
+  "expectedDurationMinutes": 40,
+  "logFilePath": "./logs/payment_recon.log",
+  "schedulerTable": "SCHEDULER.BATCH_JOBS",
+  "execution": {
+    "runDate": "2026-01-23",
+    "startTime": "03:00",
+    "endTime": "03:12",
+    "status": "FAILED",
+    "exitCode": 55,
+    "uptime": "12m",
+    "downtime": "28m",
+    "failedCount": 4
+  },
+  "criticalJob": true,
+  "maxRetries": 3,
+  "severity": "HIGH"
+},
+{
+  "jobId": "ORDER_EXPORT_JOB",
+  "jobName": "ORD_EXP_004",
+  "jobType": "FILE_HANDLING",
+  "schedule": "Daily 05:00",
+  "expectedDurationMinutes": 20,
+  "logFilePath": "./logs/order_export.log",
+  "schedulerTable": "SCHEDULER.BATCH_JOBS",
+  "execution": {
+    "runDate": "2026-01-23",
+    "startTime": "05:00",
+    "endTime": "05:07",
+    "status": "FAILED",
+    "exitCode": 21,
+    "uptime": "7m",
+    "downtime": "13m",
+    "failedCount": 2
+  },
+  "criticalJob": false,
+  "maxRetries": 2,
+  "severity": "MEDIUM"
+}
+  ]
+}
