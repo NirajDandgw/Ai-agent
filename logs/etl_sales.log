@@ -1,0 +1,9 @@
+2026-01-23 02:15:01 Job Started
+2026-01-23 02:15:05 Connecting to sales database
+2026-01-23 02:15:10 Connection established
+2026-01-23 02:30:15 Extracting sales data
+2026-01-23 03:45:20 Transformation in progress
+2026-01-23 04:00:25 ERROR: ORA-12170: TNS:Connect timeout occurred
+2026-01-23 04:00:25 at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:774)
+2026-01-23 04:00:25 at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:688)
+2026-01-23 04:30:30 Job Failed with exit code 8

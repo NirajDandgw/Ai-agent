@@ -1,0 +1,6 @@
+2026-01-23 03:45:01 Job Started
+2026-01-23 03:45:05 Checking for inventory file
+2026-01-23 03:45:10 ERROR: FileNotFoundException: /data/inventory/inv_20260123.csv (No such file or directory)
+2026-01-23 03:45:10 at java.io.FileInputStream.open0(Native Method)
+2026-01-23 03:45:10 at java.io.FileInputStream.open(FileInputStream.java:195)
+2026-01-23 04:30:15 Job Failed with exit code 4

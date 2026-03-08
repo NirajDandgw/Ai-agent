@@ -1,0 +1,6 @@
+2026-01-23 02:00:01 Job Started
+2026-01-23 02:00:03 Connecting to payroll database
+2026-01-23 02:00:04 ERROR: ORA-12541 TNS no listener
+2026-01-23 02:00:04 SQLException: ORA-12541: TNS:no listener
+2026-01-23 02:00:04 at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:774)
+2026-01-23 02:00:05 Job Failed with exit code 101
